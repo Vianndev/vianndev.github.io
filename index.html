@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio de Vianney</title>
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <div id="bloc_page">
+    <header>
+      <div id="aside">
+        <h1>Vianney</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="navmenu">
+          <li class="nav-item"><a href="#aPropos" class="nav-link">À propos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+           <a href="#xp" class="nav-link">Expériences</a>
+          </li>
+          <li class="nav-item">
+           <a href="#diplomes" class="nav-link">Diplômes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu"><svg width="50" height="50" viewbox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+          <path class="line line2" d="M 20,50 H 80"></path>
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path></svg></button>
+        </div>
+      </nav>
+    </header>
+    <div class="one"  data-aos="fade-left" >
+      <div class="cool hidden"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"></div>
+      <div class="presentation hidden">
+        <h2><span class="italic">Bonjour !</span></h2>
+        <h1><span class="h">Je suis Vianney GOMAR</span></h1>
+        <h3><span class="sous\titre">J'apprend le developement web</span></h3>
+      </div>
+    </div>
+    <section id="aPropos" class="second" data-aos="fade-right">
+      <div  class="second-child hidden">
+        <h4>Bonjour ,je m'appelle Vianney GOMAR</h4>
+        <p>Le develloppement web m'interrese beaucoup et c'est donc pourquoi je crée ce site afin d'apprendre</p>
+        <div class="tableau">
+          <ul>
+            <li>Age : 19ans</li>
+            <li>Email : vianneygomar@yahoo.com</li>
+            <li>Statut : Disponible</li>
+          </ul>
+        </div>
+      </div>
+      <div id="tete" class="hidden"><img src="images/illustrations/profileid.png" alt="Photo de ma tete " class="photo_vianney"></div>
+    </section>
+  </div>
+  <div id="diplomes" class="xp-title hidden" data-aos="fade-up">
+    <h2>Diplômes</h2>
+  </div>
+  <div class="grid-section">
+    <div class="xp-section hidden" data-aos="fade-right" >
+      <div class="xp-header">
+        <div class="xp-bac">
+          <h3>Baccalauréat STI2D</h3>
+        </div>
+        <div class="xp-years">
+          <p>2018-2021 - Lycée Branly</p>
+        </div>
+        <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="class" class="diplome"></div>
+      </div>
+      <div class="xp-body">
+        <p>J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécanique, informatique et physique plus concrets et utile que dans une filière générale.</p>
+      </div>
+    </div>
+    <div class="xp-section hidden" data-aos="fade-left">
+      <div class="xp-header">
+        <div class="xp-bac">
+          <h3>CAP Menuisier</h3>
+        </div>
+        <div class="xp-years">
+          <p>2021-2022 - Compagnons du Tour de France</p>
+        </div>
+        <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="diplome" class="diplome"></div>
+      </div>
+      <div class="xp-body">
+    <p>J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France<br>
+        J'ai beaucoup aimé cette année ainsi que les compétences que j'ai appris mais je ne souhaite pas faire ce beau métier toute ma vie .</p>
+      </div>
+    </div>
+  </div>
+  <div id="xp" class="xp-title hidden" data-aos="fade-up" >
+    <h2>Expériences</h2>
+  </div>
+  <div class="grid-section">
+    <div class="xp-section hidden" style="order: 2;" data-aos="fade-right">
+      <div class="xp-header">
+        <div class="xp-bac">
+          <h4>Apprenti Menuisier </h4>
+        </div>
+        <div class="xp-years">
+          <p>Septembre 2021- Aout 2022 SARL Home Saphir - Villeurbanne</p>
+        </div>
+        <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
+      </div>
+      <div class="xp-body">
+        <p>En tant qu'apprenti dans cette entreprise j'ai appris à réaliser des agencements et des menuiseries et la pose de parquet, cuisine, portes, placards, fenêtres. Cela m'a permis de devenir autonome et d'avoir une expérience concrète dans le monde du travail.</p></div>
+    </div>
+    <div class="xp-section hidden" style="order: 1;" data-aos="fade-left">
+    <div class="xp-header">
+      <div class="xp-bac">
+        <h4>Menuisier Interimaire</h4>
+      </div>
+      <div class="xp-years" style="font-size: 0,6em;"><p>
+        Septembre 2022 - Jusqu'à ce que
+        trouve une alternance en develloppement web :)</p>
+      </div>
+      <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
+    </div>
+      <div class="xp-body">
+        <p>Actuellement je réalise des missions d'intérim en menuiserie en pose et en fabrication. L'intérim me permet d'avoir du temps à consacrer au codage en parallèle du travail afin d'avoir plus d'expériences dans ce domaine et un meilleur portfolio.</p>
+      </div>
+    </div>
+    <div class="xp-section hidden" style="order: 3;" data-aos="fade-left">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h4>Stagiaire </h4>
+          </div>
+          <div class="xp-years" style="font-size: 0,6em;">
+            <p> Février 2020 Fonderie Vincent - Brignais</p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/steel.svg" alt="Image d'illustration de fonderie" class="work"></div>
+        </div>
+          <div class="xp-body">
+            <P.>Afin de trouver ma voie, j'ai réalisé volontairement un stage d'une semaine dans une fonderie pour voir si travailler dans l'industrie m'intéressait. <br>Il m'a permis d'apprendre énormément de connaissance sur la fonderie et le processus de création des pièces faites.
+         </p>         
+         </div>
+  </div>
+  <div class="xp-section hidden"  data-aos="fade-right" style="order: 4;">
+    <div class="xp-header">
+      <div class="xp-bac">
+        <h4>Stagiaire</h4>
+      </div>
+      <div class="xp-years" style="font-size: 0,6em;">
+        <p>Decembre 2016 Groupe Lépine - Genay<p>
+      </div>
+      <div class="xp-logo"><img src="images/illustrations/cnc.svg" alt="Cnc" class="work"></div>
+    </div>
+      <div class="xp-body">
+        <p>En classe de 3e, j'ai réalisé mon stage d'insertion professionnelle dans le groupe Lépine .J'ai eu la chance de voir la réalisation, conception, fabrication des produits de cette entreprise qui realie des protheses médicales </p>      </div>
+    </div>
+    </div>
+  <footer class="footer hidden">
+    <h5>Vianney GOMAR</h5>
+  </footer>
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+        duration: 1000,
+        once: true,
+      });
+  </script>
+</body>
+</html>
