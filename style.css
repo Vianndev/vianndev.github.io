@@ -170,7 +170,7 @@ header {
   flex-direction: row;
   min-width: 525px;
   justify-content: space-evenly;
-min-height: fit-content;
+
 
 
 }
@@ -361,6 +361,7 @@ nav > ul {
   height: 3px;
   margin: 5px auto;
   background-color: #181818;
+
 }
 
 @font-face {
@@ -379,7 +380,7 @@ nav > ul {
 html {
   scroll-behavior: smooth;
 }
-.menu {
+.menu-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -405,17 +406,17 @@ html {
   stroke-dasharray: 60 207;
   stroke-width: 6;
 }
-.opened .line1 {
+.active .line1 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
-.opened .line2 {
+.active .line2 {
   stroke-dasharray: 1 60;
   stroke-dashoffset: -30;
   stroke-width: 6;
 }
-.opened .line3 {
+.active .line3 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
   stroke-width: 6;
@@ -444,18 +445,35 @@ html {
   .navmenu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 50px;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(239, 239, 248);
+    background: -webkit-linear-gradient(bottom ,#f4f6f8, #efeff8);
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+  }
+  .nav-item{
+    height: 100px;
+    text-align: center;
+
+  }
+  .nav-link{
+   margin: auto;
+   display: inline-block;
+   padding-top: 40.5px;
+  }
+  #pcguy{
+    width: 90%;
+    margin: auto;
   }
 .one{
   flex-direction: column;
   max-width: 100%;
+  width: 100%;
 align-content: space-evenly;
 margin: auto;
 }
@@ -472,18 +490,35 @@ margin: auto;
   flex-shrink: 1;
   min-width:420px;
 }
+.navbar{
+  overflow-x: hidden;
+}
 .cool {
   max-width: 100%;
   height: 50%;
   min-width: 90%;
 }
-  .nav-menu.active {
+  .navmenu.active {
+    position: absolute;
     left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0;
+    -webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+top: 50px;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
     margin-top: 6px;
+    top: 50px;
   }
+.presentation{
+  margin: auto;
+  margin-top: 5%;
+}
+ 
+  
 }
