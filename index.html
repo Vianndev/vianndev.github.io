@@ -4,16 +4,21 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>Portfolio de Vianney</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" 
+  
+  
+/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
   <script defer src="app.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div id="bloc_page">
     <header>
-      <div id="aside">
+      <div id="aside" class="startingAnim">
         <h1>Vianney</h1>
       </div>
-      <nav class="navbar">
+      <nav class="navbar startingAnim">
         <ul class="navmenu">
           <li class="nav-item"><a href="#aPropos" class="nav-link">À propos</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Services</a>
@@ -28,7 +33,7 @@
             <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger startingAnim">
           <button class="menu-button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu"><svg width="50" height="50" viewbox="0 0 100 100">
           <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
           <path class="line line2" d="M 20,50 H 80"></path>
@@ -36,27 +41,29 @@
         </div>
       </nav>
     </header>
-    <div class="one"  data-aos="fade-left" >
-      <div class="cool hidden"><img class="img-fluid" id="pcguy" src="images/illustrations/hello3.svg" alt="hello"></div>
-      <div class="presentation hidden">
-        <h2><span class="italic">Bonjour !</span></h2>
-        <h1><span class="h">Je suis Vianney GOMAR</span></h1>
-        <h3><span class="sous\titre">J'apprend le developement web</span></h3>
+    <div class="one" >
+      <div class="cool hidden startingAnim"><img style="display:block; margin: auto;" class="img-fluid" id="pcguy" src="images/illustrations/hello3.svg" alt="hello"></div>
+      <div class="presentation hidden ">
+        <h2 class=" anim-typewriter hello" ><span class="italic" >Bonjour !</span></h2>
+        <h1 class="bonjour startingAnim"><span class="h">Je suis Vianney GOMAR</span></h1>
+        <h3 class="bonjour startingAnim" ><span class="sous-titre">J'apprend le developement web </span></h3>
+        <h3 class="bonjour startingAnim" ><span class="sous-titre">Actuellement à la recherche d'une alternance</span></h3>
       </div>
     </div>
-    <section id="aPropos" class="second" data-aos="fade-right">
+    <section id="aPropos" class="second startingAnim" >
       <div  class="second-child hidden">
         <h4>Bonjour ,je m'appelle Vianney GOMAR</h4>
-        <p>Le develloppement web m'interrese beaucoup et c'est donc pourquoi je crée ce site afin d'apprendre</p>
+        <p>Le develloppement web m'interrese beaucoup et c'est donc la raison pour laquelle je crée ce site afin d'apprendre</p>
         <div class="tableau">
           <ul>
             <li>Age : 19ans</li>
             <li>Email : vianneygomar@yahoo.com</li>
+            <li>Endroit: Lyon</li>
             <li>Statut : Disponible</li>
           </ul>
         </div>
       </div>
-      <div id="tete" class="hidden"><img src="images/illustrations/profileid.png" alt="Photo de ma tete " class="photo_vianney"></div>
+      <div id="tete" class="tete hidden startingAnim"><img src="images/illustrations/profileid.png" alt="Photo de ma tete " class="photo_vianney"></div>
     </section>
   </div>
   <div id="diplomes" class="xp-title hidden" data-aos="fade-up">
