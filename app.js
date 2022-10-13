@@ -14,6 +14,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }) );
 gsap.set(".startingAnim", {opacity: 0});
 
+
 function typeWriterAnimFinished (){
     gsap.set(".startingAnim", {opacity: 1});
     var tl = gsap.timeline();
@@ -26,3 +27,7 @@ function typeWriterAnimFinished (){
 Promise.all(typeWriterElem.getAnimations().map((animation) => animation.finished)).then(
     () => typeWriterAnimFinished()
 );
+gsap.from(".xp-title", { scrollTrigger: ".xp-title", opacity: 0, y: 100, duration: 3});
+gsap.from(".fade-right", { scrollTrigger: ".fade-right", opacity: 0, x: 100, duration: 1});
+gsap.from(".fade-left", { scrollTrigger: ".fade-left", opacity: 0, x: -100, duration: 1});
+
