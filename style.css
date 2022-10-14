@@ -408,10 +408,10 @@ footer {
   align-self: flex-end;
 }
 
-nav > ul {
+.menus{
   list-style: none;
   flex-basis: auto;
-  margin-left: 10px;
+  padding-left: 0;
 }
 
 .hamburger {
@@ -546,6 +546,7 @@ font-size: large;
   .nav-item{
     height: 100px;
     text-align: center;
+    width: 100vw;
 
   }
 
@@ -591,7 +592,6 @@ column-gap: 10em;
   .navmenu.active {
     position: absolute;
     left: 0;
-    margin-left: 0;
     width: 100%;
     box-shadow: 0;
 top: 50px;
