@@ -355,8 +355,8 @@ footer {
   flex-wrap: wrap;
   margin: 30px auto;
   display: flex;
-  justify-content: space-around;
-}
+
+gap: 2vh;}
 
 .xp-section {
   display: flex;
