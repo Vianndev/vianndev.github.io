@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
   max-width: 100%;
   margin: 0px ;
   scroll-behavior: smooth;
+  z-index: 999;
 }
 
 .circles {
@@ -303,16 +305,220 @@ margin-right: 2%;
 .titre {
   flex: 1;
 }
+.shrink{
+  flex-shrink: 1;
+}
+.github-btn{
+  font-family: Roboto, sans-serif;
+  font-weight: 46;
+  font-size: 14px;
+  color: #fff;
+  background-color: #495561;
+  padding: 7px 13px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 10px;
+  transition : 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .github-btn:hover{
+  
+    transition : 1000ms;
+    padding: 10px 20px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+  }
+  
+.js-btn{
 
+  font-family: Roboto, sans-serif;
+  font-weight: 46;
+  font-size: 14px;
+  color: #000000;
+  background-color: #e0e638;
+  padding: 10px 18px;
+  border: solid #e0e638 0px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 5px;
+  transition : 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .js-btn:hover{
+  font-family: Roboto, sans-serif;
+  transition : 1000ms;
+  padding: 10px 50px;
+  transform : translateY(-0px);
+  background-color: #e0e638;
+  color: #0066cc;
+  border: solid 0px #0066cc;
+  }
+  .css-btn{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 46;
+    font-size: 14px;
+    color: #000000;
+    background-color: #31A4D5;
+    padding: 10px 18px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 5px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .css-btn:hover{
+    
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #31A4D5;
+    color: #000000;
+    border: solid 0px #31A4D5;
+    }
+.html-btn{
+  font-family: Roboto, sans-serif;
+  font-weight: 46;
+  font-size: 14px;
+  color: black;
+
+  background-color: #ffa200;
+  padding: 10px 18px;
+  border: none;
+  box-shadow: #ffa200;
+  border-radius: 5px;
+  transition : 948ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .html-btn:hover{
+  
+  transition : 948ms;
+  padding: 10px 61px;
+  transform : translateY(-0px);
+  background-color: #fff;
+  color: #ffa200;
+  border: solid 2px #ffa200;
+  }
+  
+  .react-btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 46px;
+    font-size: 14px;
+    color: black;
+  
+    background-color: #00D8FF;
+    padding: 10px 18px;
+    border: none;
+    box-shadow: #00D8FF;
+    border-radius: 5px;
+    transition : 948ms;
+    transform: translateY(0);
+    display: flex;
+    
+    flex-direction:row-reverse;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+    .react-btn:hover{
+    
+    transition : 948ms;
+    padding: 10px 61px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #00D8FF;
+    border: solid 2px #00D8FF;
+    }
 footer {
   order: 99;
 }
+.projects-item{
+  display: flex;
+  flex-direction: column;
+background-color:#f4f6f8;
+  max-height: 12%;
+  width: 40%;
+  border-radius: 5%;
 
+}
+.projects-item-description{
+display: flex;
+flex-direction: column;
+background-color:#f4f6f8;
+height: auto;
+border-radius: 5%;
+
+}
+.contactbuttons{
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+}
+.projects-itemDtitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.projects-item-img-container{
+  max-width: 100%;
+  height: auto;
+}
+.projects-itemDlanguages{
+  height: 15%;
+  min-height: 20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+}
+.projects-item-img{
+  width: 100%;
+  height: auto;
+  resize: both;
+}
 .xp-title {
   display: flex;
   justify-content: center;
   width: auto;
   margin: auto;
+}
+#projects{
+  display: inline-block;
+  position: relative;
+}
+#projects::after{
+  content: "";
+  width: 125px;
+  height: 30px;
+  position: absolute;
+  bottom: -40px;
+  left: -20px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/illustrations/marker.svg);
+  background-repeat: no-repeat;
 }
 
 .diploma{
@@ -355,8 +561,8 @@ footer {
   flex-wrap: wrap;
   margin: 30px auto;
   display: flex;
+justify-content: space-evenly;}
 
-gap: 2vh;}
 
 .xp-section {
   display: flex;
@@ -484,6 +690,21 @@ html {
   stroke-dashoffset: -134;
   stroke-width: 6;
 }
+.btn-linkedin {
+  background: #0E76A8;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #084461;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+  color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+  background: #084461;
+  color: #fff;
+}
 /*
 .hidden {
   opacity: 0;
@@ -537,7 +758,9 @@ p{
 font-size: large;
 }
   .grid-section{
-    flex-direction: column;
+    flex-direction: column;    
+gap: 2vh;
+
   }
   .xp-section {
     width: 90%;
@@ -576,6 +799,7 @@ column-gap: 10em;
 }
 .second-child
 {
+  width: 45vh;
   flex-shrink: 1;
   resize: both;
   flex-wrap: wrap;
@@ -608,5 +832,20 @@ top: 50px;
   width: 90%;
   margin: auto;
  }
-  
+.projects-item{
+  width: 90%;
 }
+.github-btn{
+display: none;
+}
+.react-btn{
+  display: none;
+}
+.html-btn{display: none;
+}
+.js-btn{display: none;}
+.css-btn{display: none;
+
+}
+}
+
