@@ -822,7 +822,8 @@ column-gap: 10em;
   overflow-x: hidden;
 }
 .cool {
- width: 100%;
+ width: 90%;
+ margin :auto;
   height: 50%;
   min-width: 90%;
 }
