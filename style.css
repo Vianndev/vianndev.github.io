@@ -457,7 +457,6 @@ footer {
   display: flex;
   flex-direction: column;
 background-color:#f4f6f8;
-  max-height: 12%;
   width: 40%;
   border-radius: 5%;
 
@@ -468,6 +467,7 @@ flex-direction: column;
 background-color:#f4f6f8;
 height: auto;
 border-radius: 5%;
+width: 100%;
 
 }
 .contactbuttons{
@@ -483,6 +483,7 @@ border-radius: 5%;
 }
 .projects-item-img-container{
   max-width: 100%;
+  width: 1000%;
   height: auto;
 }
 .projects-itemDlanguages{
@@ -506,6 +507,8 @@ border-radius: 5%;
 #projects{
   display: inline-block;
   position: relative;
+  margin: auto;
+  margin-bottom: 60px;
 }
 #projects::after{
   content: "";
@@ -524,6 +527,7 @@ border-radius: 5%;
 .diploma{
   display: inline-block;
   position: relative;
+  margin-bottom: 60px;
 }
 .diploma::after {
   content: "";
@@ -557,9 +561,9 @@ border-radius: 5%;
 .grid-section {
   max-width: 1500px;
   height: auto;
-  width: 85%;
+  width: 100%;
   flex-wrap: wrap;
-  margin: 30px auto;
+  margin: auto;
   display: flex;
 justify-content: space-evenly;}
 
@@ -605,13 +609,13 @@ justify-content: space-evenly;}
   order: 2;
   justify-content: flex-end;
   text-align: right;
-  flex: 40%;
+  flex: 20%;
   margin-right: 10px;
 }
 
 .xp-years {
   order: 3;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 .menus{
@@ -726,6 +730,12 @@ html {
 }
 
 @media screen and (max-width: 1280px) {
+  .xp-logo{
+    min-width: 45%;
+  }
+  .xp-bac{
+    min-width: 50%;
+  }
   .navmenu {
     position: fixed;
     left: -150%;
@@ -760,6 +770,9 @@ font-size: large;
   .grid-section{
     flex-direction: column;    
 gap: 2vh;
+margin: 0px auto;
+justify-content: center;
+align-items: center;
 
   }
   .xp-section {
@@ -846,6 +859,16 @@ display: none;
 .js-btn{display: none;}
 .css-btn{display: none;
 
+}
+.xp-header {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.diplome{
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
 }
 }
 
