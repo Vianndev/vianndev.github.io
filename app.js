@@ -32,4 +32,7 @@ gsap.from(".fade-right", { scrollTrigger: ".fade-right", opacity: 0, x: 100, dur
 gsap.from(".fade-left", { scrollTrigger: ".fade-left", opacity: 0, x: -100, duration: 1},"<");;
 }
 
+const divWeather = document.getElementById('divItem');
+divItem.addEventListener('click', (e) => {window.open("https://vianndev.github.io/React-weather/", '_blank').focus();});
+
 
