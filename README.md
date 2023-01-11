@@ -8,9 +8,6 @@ J'ai appris à utiliser les media queries , flexbox et un peu plus javascript gr
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
 * [JS](https://developer.mozilla.org/fr/docs/Web/JavaScript) - JavaScript
 * [HTML](https://developer.mozilla.org/fr/docs/Web/HTML) - HTML
 * [CSS](https://developer.mozilla.org/fr/docs/Web/CSS) - CSS 
