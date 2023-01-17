@@ -459,7 +459,6 @@ footer {
 background-color:#f4f6f8;
   width: 40%;
   border-radius: 5%;
-  font-size:1vw;
 
 }
 .projects-item-description{
@@ -733,6 +732,9 @@ html {
 }
 
 @media screen and (max-width: 1280px) {
+  .projects-itemDlanguages{
+    display: none;
+  }
   .xp-logo{
     min-width: 45%;
   }
@@ -761,8 +763,8 @@ html {
   h4{
     font-size:2vw;
 }
-p{
-  font-size:1vw;
+p,li{
+  font-size:0.7rem;
 }
 .sous-titre{
   font-size: small;
