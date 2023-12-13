@@ -1,3 +1,12 @@
+:root {
+  --white: #FCFCFC;
+  --gray: #CBCDD3;
+  --dark: #777777;
+  --error: #EF8D9C;
+  --orange: #FFC39E;
+  --success: #B0DB7D;
+  --secondary: #99DBB4;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -20,7 +29,64 @@ body {
   scroll-behavior: smooth;
   z-index: 999;
 }
+/* -----------  Stage  ----------*/
+.message {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 40%;
+  top: 47%;
+}
 
+.alert {
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+/* Success Box */
+#success-box {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  left: 12%;
+  background: linear-gradient(to bottom right, var(--success) 40%, var(--secondary) 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
+}
+
+/* Error Box */
+#error-box {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  right: 12%;
+  background: linear-gradient(to bottom left, var(--error) 40%, var(--orange) 100%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba(203, 205, 211, 0.1);
+}
+
+/* Button */
+.button-box {
+  position: absolute;
+  background: var(--white);
+  width: 50%;
+  height: 15%;
+  border-radius: 20px;
+  top: 73%;
+  left: 25%;
+  outline: 0;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(119, 119, 119, 0.5);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-box:hover {
+  background: #f5f5f5;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ------------------ FOND ---------------------*/
 .circles {
   margin-top: 2px;
   position: absolute;
@@ -544,7 +610,12 @@ width: 100%;
   background-image: url(images/illustrations/marker.svg);
   background-repeat: no-repeat;
 }
-
+.logoAfpa{
+  position: relative;
+  max-height: 30px;
+  right: 1px;
+  top: 7px;
+}
 .diplome{
   max-height: 48px;
   min-width: 48px;
