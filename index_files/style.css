@@ -258,6 +258,8 @@ footer {
   top: 0px;
 }
 
+
+
 .grid-section {
   max-width: 1500px;
   height: auto;
@@ -265,6 +267,7 @@ footer {
   margin: 30px auto;
   display: flex;
   justify-content: space-around;
+  gap: 15px; /* This is the gap property */
 }
 
 .xp-section {
