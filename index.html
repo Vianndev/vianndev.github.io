@@ -1,165 +1,244 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio de Vianney</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-  <script defer src="app.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <div id="bloc_page">
-    <header>
-      <div id="aside" class="startingAnim">
-        <h1>Vianney</h1>
-      </div>
-      <nav class="navbar startingAnim">
-        <ul class="navmenu menus">
-          <li class="nav-item"><a href="#aPropos" class="nav-link">À propos</a></li>
-          <!--<li class="nav-item"><a href="#" class="nav-link">Services</a>-->
-          </li>
-          <li class="nav-item">
-          <a href="#xp" class="nav-link">Expériences</a>
-          </li>
-          <li class="nav-item">
-           <a href="#diplomes" class="nav-link">Diplômes</a>
-          </li>
-          <!--<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>-->
-        </ul>
-        <div class="hamburger startingAnim">
-          <button class="menu-button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu"><svg width="50" height="50" viewbox="0 0 100 100">
-          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-          <path class="line line2" d="M 20,50 H 80"></path>
-          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path></svg></button>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio de Vianney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script defer src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div id="bloc_page">
+      <header>
+        <div id="aside" class="startingAnim">
+          <h1>Vianney</h1>
         </div>
-      </nav>
-    </header>
-    <div class="one" >
-      <div class="cool hidden startingAnim"><img style="display:block; margin: auto;" class="img-fluid" id="pcguy" src="images/illustrations/hello3.svg" alt="hello"></div>
-      <div class="presentation hidden ">
-        <h2 class=" anim-typewriter hello" ><span class="italic" >Bonjour !</span></h2>
-        <h1 class="bonjour startingAnim"><span class="h">Je suis Vianney GOMAR</span></h1>
-        <h3 class="bonjour startingAnim" ><span class="sous-titre">J'apprend le développement web </span></h3>
-        <h3 class="bonjour startingAnim" ><span class="sous-titre">Actuellement à la recherche d'un stage</span></h3>
-        <h4 class="bonjour startingAnim"><span class="sous-titre">Du 15/04/2024 au 28/06/2024</span></h4>
-      </div>
-    </div>
-    <section id="aPropos" class="second startingAnim" >
-      <div  class="second-child hidden">
-        <h4>Bonjour, je m'appelle Vianney GOMAR</h4>
-        <p>Le développement web m'intéresse beaucoup et c'est donc la raison pour laquelle je crée ce site afin d'apprendre.</p>
-        <div class="tableau">
-          <ul>
-            <li>Age : 20 ans</li>
-            <li>Email : vianneygomar@yahoo.com</li>
-            <li>Lieu : Lyon</li>
-            <li>Statut : Disponible</li>
+        <nav class="navbar startingAnim">
+          <ul class="navmenu menus">
+            <li class="nav-item"><a href="#aPropos" class="nav-link">À propos</a></li>
+            <!--<li class="nav-item"><a href="#" class="nav-link">Services</a>-->
+            </li>
+            <li class="nav-item">
+              <a href="#xp" class="nav-link">Expériences</a>
+            </li>
+            <li class="nav-item">
+              <a href="#diplomes" class="nav-link">Diplômes</a>
+            </li>
+            <!--<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>-->
           </ul>
-        </div>
-        <div class="contactbuttons">
-          <button class="github-btn" onclick="window.open('https://www.linkedin.com/in/vianneygomar/');" >LinkedIn <img src="https://www.svgrepo.com/show/922/linkedin.svg" style="width:17px; margin-left:3px; margin-right:7px; flex-direction: row-reverse;"></button>
-          <button class="github-btn" onclick="window.open('https://github.com/Vianndev');">Github <img src="images/illustrations/github.svg" style="width:17px; margin-left:3px; margin-right:3px; flex-direction: row-reverse;"></button>
+          <div class="hamburger startingAnim">
+            <button class="menu-button"
+              onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+              aria-label="Main Menu"><svg width="50" height="50" viewbox="0 0 100 100">
+                <path class="line line1"
+                  d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                </path>
+                <path class="line line2" d="M 20,50 H 80"></path>
+                <path class="line line3"
+                  d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                </path>
+              </svg></button>
+          </div>
+        </nav>
+      </header>
+      <div class="one">
+        <div class="cool hidden startingAnim"><img style="display:block; margin: auto;" class="img-fluid" id="pcguy"
+            src="images/illustrations/hello3.svg" alt="hello"></div>
+        <div class="presentation hidden ">
+          <h2 class=" anim-typewriter hello"><span class="italic">Bonjour !</span></h2>
+          <h1 class="bonjour startingAnim"><span class="h">Je suis Vianney GOMAR</span></h1>
+          <h3 class="bonjour startingAnim"><span class="sous-titre">J'apprend le développement web </span></h3>
+          <h3 class="bonjour startingAnim"><span class="sous-titre">Actuellement à la recherche d'un stage</span></h3>
+          <h4 class="bonjour startingAnim"><span class="sous-titre">Du 15/04/2024 au 28/06/2024</span></h4>
         </div>
       </div>
-      <div id="tete" class="tete hidden startingAnim"><img src="images/illustrations/profileid.jpg" alt="Photo de ma tete " class="photo_vianney"></div>
-    </section>
-    <div class="successContainer">
-      <div id="success-box" class="second startingAnim">
-        <div class="success-header">
-          <h2 class="alert">Actuellement à la recherche d'un stage!</h2>
-          <h3 class="alertDate">du 15/04/2024 au 28/06/2024.</h3>
-          <h4 class="alertRemuneration">Non rémunéré</h4>
+      <section id="aPropos" class="second startingAnim">
+        <div class="second-child hidden">
+          <h4>Bonjour, je m'appelle Vianney GOMAR</h4>
+          <p>Le développement web m'intéresse beaucoup et c'est donc la raison pour laquelle je crée ce site afin
+            d'apprendre.</p>
+          <div class="tableau">
+            <ul>
+              <li>Age : 20 ans</li>
+              <li>Email : vianneygomar@yahoo.com</li>
+              <li>Lieu : Lyon</li>
+              <li>Statut : Disponible</li>
+            </ul>
+          </div>
+          <div class="contactbuttons">
+            <button class="github-btn" onclick="window.open('https://www.linkedin.com/in/vianneygomar/');">LinkedIn <img
+                src="https://www.svgrepo.com/show/922/linkedin.svg"
+                style="width:17px; margin-left:3px; margin-right:7px; flex-direction: row-reverse;"></button>
+            <button class="github-btn" onclick="window.open('https://github.com/Vianndev');">Github <img
+                src="images/illustrations/github.svg"
+                style="width:17px; margin-left:3px; margin-right:3px; flex-direction: row-reverse;"></button>
+          </div>
         </div>
-        <div class="message">
-          <p>Actuellement en formation pour devenir Développeur Web niv 5 (bac + 2) à l’AFPA, je cherche maintenant un stage pour
-          approfondir mes connaissances</p>
-          <p>Nous utlisons principalement JS, PHP, SQL ainsi que Bootstrap et Symfony</p>
-          <h4><img src="./images/illustrations/location.svg" alt="Logo de localisation" class="locaLogo">Dans le Rhône</h4>
+        <div id="tete" class="tete hidden startingAnim"><img src="images/illustrations/profileid.jpg"
+            alt="Photo de ma tete " class="photo_vianney"></div>
+      </section>
+      <div class="successContainer">
+        <div id="success-box" class="second startingAnim">
+          <div class="success-header">
+            <h2 class="alert">Actuellement à la recherche d'un stage!</h2>
+            <h3 class="alertDate">du 15/04/2024 au 28/06/2024.</h3>
+            <h4 class="alertRemuneration">Non rémunéré</h4>
+          </div>
+          <div class="message">
+            <p>Actuellement en formation pour devenir Développeur Web niv 5 (bac + 2) à l’AFPA, je cherche maintenant un
+              stage pour
+              approfondir mes connaissances</p>
+            <p>Nous utlisons principalement JS, PHP, SQL ainsi que Bootstrap et Symfony</p>
+            <h4><img src="./images/illustrations/location.svg" alt="Logo de localisation" class="locaLogo">Dans le Rhône
+            </h4>
+          </div>
+          <button class="button-box" href="https://www.linkedin.com/in/vianneygomar/"
+            alt="Renvoie sur ma page linkedin">
+            <h1><a href="http://www.linkedin.com/in/vianneygomar/">Contact</a></h1>
+          </button>
         </div>
-        <button class="button-box" href="https://www.linkedin.com/in/vianneygomar/" alt="Renvoie sur ma page linkedin">
-          <h1 ><a href="http://www.linkedin.com/in/vianneygomar/" >Contact</a></h1>
-        </button>
       </div>
     </div>
-  </div>
-  <div id="xp" class="xp-title hidden" >
-    <h2 id="projects">Projets</h2>
-  </div>
-  <div class="grid-section">
-<div class="projects-item fade-right">
-  <div class="projects-item-img-container"><img src="images/illustrations/preview.jpg" class="projects-item-img" alt="Photo de ce site" ></div>
-  <div class="projects-item-description">
-    <div class="projects-itemDtitle">
-      <h3 style="min-width: min-content; margin: 0; ">Mon portfolio</h3>
-      <div><a href="https://github.com/Vianndev/vianndev.github.io"><img  src="images/illustrations/github.svg" alt="Github logo"></a> </div>
+    <div id="xp" class="xp-title hidden">
+      <h2 id="projects">Projets</h2>
     </div>
-    <div class="projects-itemDlanguages">
-      <button style="margin : 1%" class="shrink html-btn" onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';" value="Go to Html doumentation">Html <img src="https://www.svgrepo.com/show/163149/html5.svg" style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
-      <button  style="margin : 1%" class="shrink css-btn">Css <img  onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';" value="Go to Css doumentation" src="https://www.svgrepo.com/show/102011/css-3.svg" style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
-  <button style="margin : 1%" class="shrink js-btn">Javascript <img onclick="location.href='https://developer.mozilla.org/fr/docs/Web/JavaScript';" value="Go to Javascript doumentation" src="https://www.svgrepo.com/show/341951/js.svg" style="width: 18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
-    </div>
-    <div class="projects-itemDD">
-    <p>Ce site est mon tout premier réel projet, je l'ai écrit en Css et Javascript natif. <br> J'ai utilisé la librairie GSAP de greensocks pour les animations.</p>
-    </div>
-  </div>
-</div>
-<div id="divItem"class="projects-item fade-left" onclick="openInNewTab('https://vianndev.github.io/React-weather/');" id="divWeather">
-  <div class="projects-item-img-container"><img src="images/illustrations/previewweather.png" class="projects-item-img" alt="no image" ></div>
-  <div class="projects-item-description">
-    <div class="projects-itemDtitle">
-      <h3 style="min-width: min-content; margin: 0; "> <a href="https://vianndev.github.io/React-weather/">Site web météorologique</a></h3>
-      <div><a href=""><img  src="images/illustrations/github.svg" alt="Github logo"></a> </div>
-    </div>
-    <div class="projects-itemDlanguages">
-      <button style="margin : 1%" class="react-btn" onclick="location.href='https://reactjs.org/docs/getting-started.html';" value="Go to react doumentation">React.js <img src="https://www.svgrepo.com/show/327388/logo-react.svg" style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
-      <button style="margin : 1%" class="html-btn" onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';" value="Go to Html doumentation">Html <img src="https://www.svgrepo.com/show/163149/html5.svg" style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
-      <button  style="margin : 1%" class="css-btn">Css <img  onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';" value="Go to Css doumentation" src="https://www.svgrepo.com/show/102011/css-3.svg" style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
-  <!--<button style="margin : 1%" class="js-btn">Javascript <img onclick="location.href='https://developer.mozilla.org/fr/docs/Web/JavaScript';" value="Go to Javascript doumentation" src="https://www.svgrepo.com/show/341951/js.svg" style="width:19px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>-->
-    </div>
-    <div class="projects-itemDD">
-    <p>J'ai créé ce site en utilisant React.Js, OpenWeather API, Tailwind.css pour le style.
-      Il m'a permis d'apprendre les bases de react et de récupérer des données via une API.
-    </p>
-    </div>
-  </div>
-</div>
-  </div>
-  <div id="diplomes" class="xp-title hidden" >
-    <h2 class="diploma">Diplômes</h2>
-  </div>
-  <div class="grid-section">
-    <div class="xp-section hidden fade-right"  >
-      <div class="xp-header">
-        <div class="xp-bac">
-          <h3>Baccalauréat STI2D</h3>
+    <div class="grid-section">
+      <div class="projects-item fade-right">
+        <div class="projects-item-img-container"><img src="images/illustrations/preview.jpg" class="projects-item-img"
+            alt="Photo de ce site"></div>
+        <div class="projects-item-description">
+          <div class="projects-itemDtitle">
+            <h3 style="min-width: min-content; margin: 0; ">Mon portfolio</h3>
+            <div><a href="https://github.com/Vianndev/vianndev.github.io"><img src="images/illustrations/github.svg"
+                  alt="Github logo"></a> </div>
+          </div>
+          <div class="projects-itemDlanguages">
+            <button style="margin : 1%" class="shrink html-btn"
+              onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';"
+              value="Go to Html doumentation">Html <img src="https://www.svgrepo.com/show/163149/html5.svg"
+                style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="shrink css-btn">Css <img
+                onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';" value="Go to Css doumentation"
+                src="https://www.svgrepo.com/show/102011/css-3.svg"
+                style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="shrink js-btn">Javascript <img
+                onclick="location.href='https://developer.mozilla.org/fr/docs/Web/JavaScript';"
+                value="Go to Javascript doumentation" src="https://www.svgrepo.com/show/341951/js.svg"
+                style="width: 18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
+          </div>
+          <div class="projects-itemDD">
+            <p>Ce site est mon tout premier réel projet, je l'ai écrit en Css et Javascript natif. <br> J'ai utilisé la
+              librairie GSAP de greensocks pour les animations.</p>
+          </div>
         </div>
-        <div class="xp-years">
-          <p>2018-2021 - Lycée Branly</p>
-        </div>
-        <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="class" class="diplome"></div>
       </div>
-      <div class="xp-body">
-        <p>J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécaniques, informatiques et physiques plus concrets et utiles que dans une filière générale.</p>
+      <div class="projects-item fade-left" 
+        onclick="openInNewTab('https://vianndev.github.io/React-weather/');" id="divWeather">
+        <div class="projects-item-img-container"><img src="images/illustrations/previewweather.png"
+            class="projects-item-img" alt="no image"></div>
+        <div class="projects-item-description">
+          <div class="projects-itemDtitle">
+            <h3 style="min-width: min-content; margin: 0; "> <a href="https://vianndev.github.io/React-weather/">Site
+                web météorologique</a></h3>
+            <div><a href=""><img src="images/illustrations/github.svg" alt="Github logo"></a> </div>
+          </div>
+          <div class="projects-itemDlanguages">
+            <button style="margin : 1%" class="react-btn"
+              onclick="location.href='https://reactjs.org/docs/getting-started.html';"
+              value="Go to react doumentation">React.js <img src="https://www.svgrepo.com/show/327388/logo-react.svg"
+                style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="html-btn"
+              onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';"
+              value="Go to Html doumentation">Html <img src="https://www.svgrepo.com/show/163149/html5.svg"
+                style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="css-btn">Css <img
+                onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';" value="Go to Css doumentation"
+                src="https://www.svgrepo.com/show/102011/css-3.svg"
+                style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
+          </div>
+          <div class="projects-itemDD">
+            <p>J'ai créé ce site en utilisant React.Js, OpenWeather API, Tailwind.css pour le style.
+              Il m'a permis d'apprendre les bases de react et de récupérer des données via une API.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="projects-item-bd" class="projects-item fade-right"
+        onclick="openInNewTab('https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html');" id="divBd">
+        <div class="projects-item-img-container">
+          <img src="images/illustrations/bdd/animationbig2.webp" class="projects-item-img" alt="no image">
+        </div>
+        <div class="projects-item-description">
+          <div class="projects-itemDtitle">
+            <h3 style="min-width: min-content; margin: 0; "> <a
+                href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Gestion de
+                location de Bandes dessinées
+              </a></h3>
+            <div><a href=""><img src="images/illustrations/github.svg" alt="Github logo"></a> </div>
+          </div>
+          <div class="projects-itemDlanguages">
+            <button style="margin : 1%" class="shrink js-btn">Javascript <img
+                onclick="location.href='https://developer.mozilla.org/fr/docs/Web/JavaScript';"
+                value="Go to Javascript doumentation" src="https://www.svgrepo.com/show/341951/js.svg"
+                style="width: 18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="html-btn"
+              onclick="location.href='https://developer.mozilla.org/fr/docs/Web/HTML';"
+              value="Go to Html doumentation">Html
+              <img src="https://www.svgrepo.com/show/163149/html5.svg"
+                style="width:18px; margin-left:0px; margin-right:10px; flex-direction: row-reverse;"></button>
+            <button style="margin : 1%" class="css-btn">Css <img
+                onclick="location.href='https://developer.mozilla.org/fr/docs/Web/Css';" value="Go to Css doumentation"
+                src="https://www.svgrepo.com/show/102011/css-3.svg"
+                style="width:18px; margin-left:0px; margin-right:3px; flex-direction: row-reverse;"></button>
+          </div>
+          <div class="projects-itemDD">
+            <p>Site responsive de gestion de location des Bandes dessinées créée lors de ma formation (sans base de données).Utilisation de l' API d’Open Library pour auto-commpleter lors d'ajout de livre ses infos,et sa couverture.            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="xp-section hidden fade-left" >
-      <div class="xp-header">
-        <div class="xp-bac">
-          <h3>CAP Menuisier</h3>
-        </div>
-        <div class="xp-years">
-          <p>2021 - 2022 - Compagnons du Tour de France</p>
-        </div>
-        <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="diplome" class="diplome"></div>
-      </div>
-      <div class="xp-body">
-    <p>J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France.<br>
-        J'ai beaucoup aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce beau métier toute ma vie .</p>
-      </div>
+    <div id="diplomes" class="xp-title hidden">
+      <h2 class="diploma">Diplômes</h2>
     </div>
+    <div class="grid-section">
+      <div class="xp-section hidden fade-right">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h3>Baccalauréat STI2D</h3>
+          </div>
+          <div class="xp-years">
+            <p>2018-2021 - Lycée Branly</p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="class" class="diplome">
+          </div>
+        </div>
+        <div class="xp-body">
+          <p>J'ai passé un bac technologique STI2d afin de pouvoir apprendre des concepts mécaniques, informatiques et
+            physiques plus concrets et utiles que dans une filière générale.</p>
+        </div>
+      </div>
+      <div class="xp-section hidden fade-left">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h3>CAP Menuisier</h3>
+          </div>
+          <div class="xp-years">
+            <p>2021 - 2022 - Compagnons du Tour de France</p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/diploma-svgrepo-com.svg" alt="diplome" class="diplome">
+          </div>
+        </div>
+        <div class="xp-body">
+          <p>J'ai réalisé un apprentissage d'un an en menuiserie chez les compagnons du Tour de France.<br>
+            J'ai beaucoup aimé cette année ainsi que les compétences que j'ai apprises mais je ne souhaite pas faire ce
+            beau métier toute ma vie .</p>
+        </div>
+      </div>
       <div class="xp-section hidden fade-left">
         <div class="xp-header">
           <div class="xp-bac">
@@ -172,42 +251,48 @@
         </div>
         <div class="xp-body">
           <p>Formation 1258h : Analyses (Merise, UML) | Gestion de projets (Agile, SCRUM) | Langages (SQL,
-          HTML5, CSS3, JavaScript, PHP)</p>
+            HTML5, CSS3, JavaScript, PHP)</p>
           <p>BDD (MySQL) | Frameworks (Bootstrap, Symfony) | Logiciels (VS Code, Figma, Looping, Trello).</p>
         </div>
       </div>
-  </div>
-  <div id="xp" class="xp-title hidden" >
-    <h2 class="diploma">Expériences</h2>
-  </div>
-  <div class="grid-section">
-    <div class="xp-section hidden fade-right" style="order: 2;" >
-      <div class="xp-header">
-        <div class="xp-bac">
-          <h4>Apprenti Menuisier </h4>
+    </div>
+    <div id="xp" class="xp-title hidden">
+      <h2 class="diploma">Expériences</h2>
+    </div>
+    <div class="grid-section">
+      <div class="xp-section hidden fade-right" style="order: 2;">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h4>Apprenti Menuisier </h4>
+          </div>
+          <div class="xp-years">
+            <p>Septembre 2021- Aout 2022 SARL Home Saphir - Villeurbanne</p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
         </div>
-        <div class="xp-years">
-          <p>Septembre 2021- Aout 2022 SARL Home Saphir - Villeurbanne</p>
+        <div class="xp-body">
+          <p>En tant qu'apprenti dans cette entreprise j'ai appris à réaliser des agencements et des menuiseries et la
+            pose de parquet, cuisine, portes, placards, fenêtres. Cela m'a permis de devenir autonome et d'avoir une
+            expérience concrète dans le monde du travail.</p>
         </div>
-        <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
       </div>
-      <div class="xp-body">
-        <p>En tant qu'apprenti dans cette entreprise j'ai appris à réaliser des agencements et des menuiseries et la pose de parquet, cuisine, portes, placards, fenêtres. Cela m'a permis de devenir autonome et d'avoir une expérience concrète dans le monde du travail.</p></div>
-    </div>
-    <div class="xp-section hidden fade-left" style="order: 1;">
-    <div class="xp-header">
-      <div class="xp-bac">
-        <h4>Menuisier Interimaire</h4>
+      <div class="xp-section hidden fade-left" style="order: 1;">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h4>Menuisier Interimaire</h4>
+          </div>
+          <div class="xp-years" style="font-size: 0,6em; width: 320px;">
+            <p>2022-2023</p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
+        </div>
+        <div class="xp-body">
+          <p>Fabrication et pose d’agencements, ainsi que du travail de finition dans des appartements Haussmannien de
+            haut standing au centre devLyon.L'intérim m'a permet d'avoir du temps à consacrer à la programmation en
+            parallèle du travail afin d'avoir plus d'expériences dans ce domaine et un meilleur portfolio.</p>
+        </div>
       </div>
-      <div class="xp-years" style="font-size: 0,6em; width: 320px;"><p>2022-2023</p>
-      </div>
-      <div class="xp-logo"><img src="images/illustrations/chisel.svg" alt="Marteau" class="work"></div>
-    </div>
-      <div class="xp-body">
-        <p>Fabrication et pose d’agencements, ainsi que du travail de finition dans des appartements Haussmannien de haut standing au centre devLyon.L'intérim m'a permet d'avoir du temps à consacrer à la programmation en parallèle du travail afin d'avoir plus d'expériences dans ce domaine et un meilleur portfolio.</p>
-      </div>
-    </div>
-    <div class="xp-section hidden fade-left" style="order: 3;" >
+      <div class="xp-section hidden fade-left" style="order: 3;">
         <div class="xp-header">
           <div class="xp-bac">
             <h4>Stagiaire </h4>
@@ -215,31 +300,38 @@
           <div class="xp-years" style="font-size: 0,6em;">
             <p> Février 2020 Fonderie Vincent - Brignais</p>
           </div>
-          <div class="xp-logo"><img src="images/illustrations/steel.svg" alt="Image d'illustration de fonderie" class="work"></div>
+          <div class="xp-logo"><img src="images/illustrations/steel.svg" alt="Image d'illustration de fonderie"
+              class="work"></div>
         </div>
-          <div class="xp-body">
-            <P>Afin de trouver ma voie, j'ai réalisé volontairement un stage d'une semaine dans une fonderie pour voir si travailler dans l'industrie m'intéressait. <br>Il m'a permis d'apprendre énormément de connaissance sur la fonderie et le processus de création des pièces faites.
-         </p>         
-         </div>
-  </div>
-  <div class="xp-section hidden fade-right"   style="order: 4;">
-    <div class="xp-header">
-      <div class="xp-bac">
-        <h4>Stagiaire</h4>
+        <div class="xp-body">
+          <P>Afin de trouver ma voie, j'ai réalisé volontairement un stage d'une semaine dans une fonderie pour voir si
+            travailler dans l'industrie m'intéressait. <br>Il m'a permis d'apprendre énormément de connaissance sur la
+            fonderie et le processus de création des pièces faites.
+          </p>
+        </div>
       </div>
-      <div class="xp-years" style="font-size: 0,6em;">
-        <p>Decembre 2016 Groupe Lépine - Genay<p>
+      <div class="xp-section hidden fade-right" style="order: 4;">
+        <div class="xp-header">
+          <div class="xp-bac">
+            <h4>Stagiaire</h4>
+          </div>
+          <div class="xp-years" style="font-size: 0,6em;">
+            <p>Decembre 2016 Groupe Lépine - Genay
+            <p>
+          </div>
+          <div class="xp-logo"><img src="images/illustrations/cnc.svg" alt="Cnc" class="work"></div>
+        </div>
+        <div class="xp-body">
+          <p>En classe de 3e, j'ai réalisé mon stage d'insertion professionnel dans le groupe Lépine .J'ai eu la chance
+            de voir la réalisation, conception, fabrication des produits de cette entreprise qui realie des prothèse
+            médicales </p>
+        </div>
       </div>
-      <div class="xp-logo"><img src="images/illustrations/cnc.svg" alt="Cnc" class="work"></div>
     </div>
-      <div class="xp-body">
-        <p>En classe de 3e, j'ai réalisé mon stage d'insertion professionnel dans le groupe Lépine .J'ai eu la chance de voir la réalisation, conception, fabrication des produits de cette entreprise qui realie des prothèse médicales </p>      </div>
-    </div>
-    </div>
-  <footer class="footer hidden">
-    <h5>Vianney GOMAR</h5>
-  </footer>
- <!--<ul class="circles">
+    <footer class="footer hidden">
+      <h5>Vianney GOMAR</h5>
+    </footer>
+    <!--<ul class="circles">
     <li></li>
     <li></li>
     <li></li>
@@ -250,6 +342,7 @@
     <li></li>
     <li></li>
     <li></li>
-  </ul>--> 
-</body>
+  </ul>-->
+  </body>
+
 </html>

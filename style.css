@@ -663,7 +663,10 @@ width: 100%;
   flex-wrap: wrap;
   margin: auto;
   display: flex;
-justify-content: space-evenly;}
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
 
 
 .xp-section {
@@ -971,6 +974,10 @@ display: none;
   min-width: 40px;
   width: 40px;
   height: 40px;
+}
+
+#success-box {
+max-height: 400px;
 }
 }
 
