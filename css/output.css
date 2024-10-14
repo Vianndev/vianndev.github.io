@@ -4533,6 +4533,14 @@ html {
   width: 100vw;
 }
 
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -4748,6 +4756,10 @@ html {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -5926,6 +5938,14 @@ html {
     width: 24rem;
   }
 
+  .md\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:max-w-sm {
     max-width: 24rem;
   }
@@ -6019,9 +6039,18 @@ html {
     align-items: center;
   }
 
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pt-24 {
