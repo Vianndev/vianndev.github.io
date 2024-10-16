@@ -1,6 +1,8 @@
-# 🌐 Portfolio Personnel
+# Portfolio 
+Bienvenue sur le dépôt GitHub de mon portfolio . 
+Ce projet utilise **TailwindCSS**, **DaisyUI** et **TailwindCSS Typography** pour créer un design élégant, moderne et responsive. 
 
-Bienvenue sur le dépôt GitHub de mon portfolio personnel. Ce projet utilise **TailwindCSS**, **DaisyUI** et **TailwindCSS Typography** pour créer un design élégant, moderne et responsive. Voici une brève description de l'arborescence des fichiers de ce projet.
+Voici une brève description de l'arborescence des fichiers de ce projet.
 
 ## 🎨 Technologies utilisées
 
