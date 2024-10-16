@@ -1,5 +1,5 @@
-# Portfolio 
-Bienvenue sur le dépôt GitHub de mon portfolio . 
+# Vianndev Portfolio
+Bienvenue sur le dépôt GitHub de mon **[Portfolio](https://vianndev.fr/)**.
 Ce projet utilise **TailwindCSS**, **DaisyUI** et **TailwindCSS Typography** pour créer un design élégant, moderne et responsive. 
 
 Voici une brève description de l'arborescence des fichiers de ce projet.
@@ -40,13 +40,7 @@ Pour cloner et exécuter le projet localement, suivez les étapes ci-dessous :
 1. Clonez ce dépôt :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/portfolio.git
-   ```
-
-2. Accédez au répertoire du projet :
-
-   ```bash
-   cd portfolio
+   git clone https://github.com/Vianndev/vianndev.github.io/
    ```
 
 3. Installez les dépendances nécessaires :
@@ -61,6 +55,11 @@ Pour cloner et exécuter le projet localement, suivez les étapes ci-dessous :
    npm run dev
    ```
 
+5. Lorsque vous deployez
+
+   ```bash
+   npm run build
+   ```
 ## 📝 Licence
 
 Ce projet est sous licence MIT. Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
