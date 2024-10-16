@@ -1,6 +1,6 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Vianndev",
+  "name": "Portfolio Vianndev - Développeur FullStack/Backend",
   "icons": [{
     "src": "profilepicicon.png",
     "type": "image/png",
@@ -8,5 +8,7 @@
   }],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "theme_color": "#fafafa",
+  "description": "Découvrez mon portfolio de développeur FullStack et Backend. Technologies modernes, CI/CD avec GitHub Pages, et mise en avant de mes projets utilisant TailwindCSS, DaisyUI, Symfony, et plus.",
+  "display": "standalone",
 }

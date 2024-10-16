@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth overflow-x-none h-screen font-poppins-medium" data-theme="cupcake" lang="">
+<html class="scroll-smooth overflow-x-none h-screen font-poppins-medium" data-theme="cupcake" lang="fr-FR">
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -24,7 +24,7 @@
     <div class="navbar bg-base-100 shadow-sm">
       <div class="navbar-start">
         <div class="dropdown">
-          <div class="btn btn-ghost lg:hidden" role="button" tabindex="0">
+          <div class="btn btn-ghost lg:hidden" role="button" tabindex="0" aria-label="Ouvrir le menu de navigation">
             <svg
               class="h-5 w-5"
               fill="none"
@@ -32,14 +32,14 @@
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M4 6h16M4 12h8m-8 6h16"
+                    d="M4 6h16M4 12h8m-8 6h16"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"/>
             </svg>
           </div>
           <ul class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[2] mt-3 w-52 p-2 shadow"
-              tabindex="0">
+              tabindex="0" aria-label="Ouvrir le menu de navigation">
             <li><a href="#Presentation">Présentation</a></li>
             <li><a href="#project-item-main-bd-gestion">Projets</a></li>
             <li><a href="#section-about-me">À propos de moi</a></li>
@@ -63,6 +63,7 @@
         <div
           class="btn"
           id="Contact-me-button"
+          aria-label="Ouvrir le profil LinkedIn"
           onclick="window.open('https://www.linkedin.com/in/vianneygomar/', '_blank')" role="button">
           <!-- Linkedin -->
           <span class="[&>svg]:h-5 [&>svg]:w-5 [&>svg]:fill-[#0077b5]">
@@ -172,7 +173,7 @@
       </div>
       <div class="projects-item-description ">
         <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Gestion de
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html" alt="Aller sur le projet de gestion de BD"></a>Gestion de
           location de Bandes dessinées
         </h3>
         <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
@@ -188,7 +189,7 @@
             d'un livre.</p>
         </article>
         <div class="badge badge-primary badge-lg"><a
-          class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
+          class="not-prose" href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html" alt="Aller sur le projet de gestion de BD">Voir le site
           &#8599</a></div>
       </div>
     </div>
@@ -244,7 +245,7 @@
       </div>
       <div class="projects-item-description ">
         <h3 class="text-2xl md:text-4xl font-poppins font-black"><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html"></a>Site météorologique avec
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html" alt="Aller sur le projet de gestion de BD"></a>Site météorologique avec
           React.js
         </h3>
         <p class="text-xl md:text-2xl font-poppins font-bold">Application Web</p>
@@ -253,7 +254,7 @@
           <p>Il m'a
             permis d'apprendre les bases de react et de récupérer des données via une API. </p></article>
         <div class="badge badge-primary badge-lg not-prose "><a
-          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html">Voir le site
+          href="https://vianndev.github.io/Bibliosysteme---Fil-rouge/pagedaccueil.html" alt="Aller sur le projet de gestion de BD">Voir le site
           &#8599</a></div>
       </div>
     </div>
@@ -554,6 +555,7 @@
           </article>
           <div class="card-actions pt-2">
             <button class="btn btn-neutral"
+                    aria-label="Ouvrir la recommendation sur LinkedIn"
                     onclick="window.open('https://www.linkedin.com/in/vianneygomar/', '_blank')">Voir sur Linkedin
             </button>
           </div>
