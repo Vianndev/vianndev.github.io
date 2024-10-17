@@ -1,6 +1,6 @@
 # Vianndev Portfolio
 Bienvenue sur le dépôt GitHub de mon **[Portfolio](https://vianndev.fr/)**.
-Ce projet utilise **TailwindCSS**, **DaisyUI** et **TailwindCSS Typography** pour créer un design élégant, moderne et responsive. 
+Ce projet utilise **TailwindCSS**, **DaisyUI** et **TailwindCSS Typography** pour créer un design élégant, moderne et responsive.
 
 Voici une brève description de l'arborescence des fichiers de ce projet.
 
@@ -62,7 +62,7 @@ Pour cloner et exécuter le projet localement, suivez les étapes ci-dessous :
    ```
 ## 📝 Licence
 
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](./LICENSE) pour plus de détails.
+Ce projet est sous licence MIT
 
 ---
 
